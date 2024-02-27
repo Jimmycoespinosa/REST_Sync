@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "24b7076a-3aab-437e-a02f-844dd2b85494",
+		"name": "Proyecto Inicial POST",
+		"description": "Métodos para el manejo de APIS REST.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27076971"
+	},
+	"item": [
+		{
+			"name": "Consulta Usuarios (Todos)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jimmycoespinosa23.000webhostapp.com/api/user",
+					"protocol": "https",
+					"host": [
+						"jimmycoespinosa23",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Usuarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Gustavo Leyva\",\r\n    \"email\": \"gulesuribe@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jimmycoespinosa23.000webhostapp.com/api/user/create",
+					"protocol": "https",
+					"host": [
+						"jimmycoespinosa23",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Usuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jimmycoespinosa23.000webhostapp.com/api/user/search/6",
+					"protocol": "https",
+					"host": [
+						"jimmycoespinosa23",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"search",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Alvarito\",\r\n    \"email\": \"alvaro@hotmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jimmycoespinosa23.000webhostapp.com/api/user/update/22",
+					"protocol": "https",
+					"host": [
+						"jimmycoespinosa23",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"update",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Usuario",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://jimmycoespinosa23.000webhostapp.com/api/user/delete/22",
+					"protocol": "https",
+					"host": [
+						"jimmycoespinosa23",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"delete",
+						"22"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
